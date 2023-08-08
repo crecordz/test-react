@@ -1,5 +1,5 @@
 .header {
-  width: 1920px;
+  width: 1838px;
   height: 73.77px;
   border-bottom: 1px grey solid;
   display: flex;
@@ -21,6 +21,12 @@
   display: flex;
   justify-content: space-evenly;
   align-items: center;
+  font-family: "Neue Machina";
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 23px;
+  letter-spacing: 2.1px;
 }
 
 .header__dot {

@@ -1,0 +1,66 @@
+.main__block-one {
+  height: 166px;
+  max-width: 1838px;
+  border-bottom: 1px solid #646464;
+  display: flex;
+  justify-content: space-between;
+}
+
+.main__block-two {
+  height: 100%;
+  width: 166px;
+  border-right: 1px solid #646464;
+}
+
+.main__block-three {
+  width: 727px;
+  border-left: 1px solid #646464;
+}
+
+.main__info {
+  height: 426px;
+  width: 1111px;
+  border-bottom: 1px solid #646464;
+  border-right: 1px solid #646464;
+  color: white;
+}
+
+.main__title {
+  margin: 0;
+  padding: 0;
+  font-family: "Druk Wide Medium";
+  font-size: 42px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 55px;
+  letter-spacing: 6.3px;
+  max-width: 1006px;
+  padding-top: 84px;
+}
+
+.main__subtitle {
+  margin: 0;
+  padding: 0;
+  font-family: "Neue Machina";
+  font-size: 19px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 40px;
+  letter-spacing: 2.85px;
+  padding-top: 48px;
+  max-width: 962px;
+}
+
+.main__container {
+  display: flex;
+  flex-direction: column;
+}
+
+.main__container-line {
+  display: flex;
+}
+
+.canvas-element {
+  width: 727px;
+  border-bottom: 1px solid #646464;
+}

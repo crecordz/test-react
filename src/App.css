@@ -1,3 +1,4 @@
+@import url("./vendor/stylesheet.css");
 body {
   background-image: url("./assets/noise_bg.png");
 }

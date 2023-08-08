@@ -25,6 +25,12 @@
   border: none;
   margin: 0 7px;
   display: block;
+  font-family: "Neue Machina";
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 23px;
+  letter-spacing: 2.1px;
 }
 
 .menu__button_red {

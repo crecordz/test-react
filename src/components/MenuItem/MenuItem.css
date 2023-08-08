@@ -1,0 +1,32 @@
+.menu__arrow {
+  background-image: url("../../assets/arrow.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 8px;
+  height: 4px;
+  transition: transform 0.5s ease-in-out;
+}
+
+.menu__button-container {
+  display: flex;
+  gap: 17px;
+  align-items: center;
+  justify-content: center;
+}
+
+.menu__arrow_up {
+  transform: rotateX(180deg);
+}
+.menu__button {
+  background-color: inherit;
+  color: white;
+  text-transform: uppercase;
+  letter-spacing: 2.1px;
+  border: none;
+  margin: 0 7px;
+  display: block;
+}
+
+.menu__button_red {
+  color: #e7205f;
+}

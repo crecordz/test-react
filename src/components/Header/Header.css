@@ -1,0 +1,30 @@
+.header {
+  width: 1920px;
+  height: 73.77px;
+  border-bottom: 1px grey solid;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  letter-spacing: 2.1px;
+}
+
+.header__rectangle {
+  width: 170px;
+  height: 35px;
+  background-image: url("../../assets/Rectangle.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  margin: auto;
+  text-align: center;
+  text-transform: uppercase;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.header__dot {
+  width: 3px;
+  height: 3px;
+  background-color: #e7205f;
+}

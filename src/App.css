@@ -1,0 +1,8 @@
+body {
+  background-image: url("./assets/noise_bg.png");
+}
+
+#root {
+  max-width: 1920px;
+  margin: 0 auto;
+}

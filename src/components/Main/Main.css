@@ -1,10 +1,24 @@
 .main__block-one {
   height: 166px;
   max-width: 1838px;
+  width: 100%;
   border-bottom: 1px solid #646464;
   display: flex;
   justify-content: space-between;
   position: relative;
+}
+
+.main__block-two {
+  height: 100%;
+  max-width: 166px;
+  width: 100%;
+  border-right: 1px solid #646464;
+}
+
+.main__block-three {
+  max-width: 727px;
+  width: 100%;
+  border-left: 1px solid #646464;
 }
 
 .main__blink {
@@ -38,20 +52,8 @@
   }
 }
 
-.main__block-two {
-  height: 100%;
-  width: 166px;
-  border-right: 1px solid #646464;
-}
-
-.main__block-three {
-  width: 727px;
-  border-left: 1px solid #646464;
-}
-
 .main__info {
-  height: 426px;
-  width: 1111px;
+  min-height: 426px;
   border-bottom: 1px solid #646464;
   border-right: 1px solid #646464;
   color: white;
@@ -87,6 +89,8 @@
 .main__container {
   display: flex;
   flex-direction: column;
+  max-width: 1111px;
+  width: 100%;
 }
 
 .main__container-line {
@@ -95,8 +99,12 @@
 }
 
 .canvas-element {
-  width: 727px;
+  max-width: 727px;
+  width: 100%;
+  height: auto;
+  aspect-ratio: 0.86547619;
   border-bottom: 1px solid #646464;
+  object-fit: contain;
 }
 
 .main__underscore {
@@ -134,4 +142,62 @@
 .main__underscore:hover::after {
   width: 100%;
   transition: width 0.3s;
+}
+
+@media (max-width: 1900px) {
+  .main__info {
+    min-height: 480px;
+  }
+  .main__subtitle {
+    max-width: 848px;
+  }
+  .canvas-element {
+    max-width: 100%;
+    width: auto;
+  }
+}
+
+@media (max-width: 1735px) {
+  .main__subtitle {
+    max-width: 600px;
+  }
+}
+
+@media (max-width: 1474px) {
+  .main__info_add {
+    min-height: 460px;
+  }
+  .main__subtitle {
+    max-width: 400px;
+  }
+  .main__info {
+    min-height: 660px;
+  }
+}
+
+@media (max-width: 1157px) {
+  .main__block-three {
+    max-width: 400px;
+  }
+  .main__info {
+    min-height: 450px;
+  }
+  .main__info_add {
+    min-height: 250px;
+  }
+  .main__subtitle {
+    max-width: 962px;
+  }
+  .main__container-line {
+    flex-wrap: wrap;
+  }
+}
+
+@media (max-width: 922px) {
+  .main__info {
+    min-height: 520px;
+  }
+  .main__block-three {
+    max-width: 250px;
+  }
 }

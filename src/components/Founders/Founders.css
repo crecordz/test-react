@@ -1,6 +1,7 @@
 .founders__block-one {
   height: 166px;
   max-width: 1838px;
+  width: 100%;
   border-bottom: 1px solid #646464;
   display: flex;
   justify-content: space-between;
@@ -8,8 +9,8 @@
 }
 
 .founders__block-two {
-  height: 100%;
-  width: 919px;
+  max-width: 919px;
+  width: 100%;
   border-right: 1px solid #646464;
 }
 
@@ -77,19 +78,19 @@
 
 .founders__container {
   display: flex;
-  flex-wrap: wrap;
   color: white;
 }
 
 .founders__dick {
   max-width: 919px;
   width: 100%;
-  height: auto;
+
   position: relative;
   border-right: 1px solid #646464;
 }
 
 .founders__dick_dark {
+  height: auto;
   background-image: url("../../assets/dick_dark.png");
   background-repeat: no-repeat;
   background-size: center;
@@ -106,6 +107,7 @@
   background-image: url("../../assets/dick.png");
   background-repeat: no-repeat;
   background-size: center;
+  height: auto;
   background-position: center;
   aspect-ratio: 1.80550098;
   opacity: 0;
@@ -123,13 +125,14 @@
 .founders__depp {
   max-width: 919px;
   width: 100%;
-  height: auto;
+
   position: relative;
 }
 
 .founders__depp_dark {
   background-image: url("../../assets/depp_dark.png");
   background-repeat: no-repeat;
+  height: auto;
   background-size: center;
   background-position: center;
   aspect-ratio: 1.80550098;
@@ -144,6 +147,7 @@
   background-image: url("../../assets/depp.png");
   background-repeat: no-repeat;
   background-size: center;
+  height: auto;
   background-position: center;
   aspect-ratio: 1.80550098;
   opacity: 0;
@@ -170,11 +174,8 @@
   line-height: 40px;
   letter-spacing: 2.85px;
   padding-bottom: 100px;
-}
-
-.founders__paragraph:last-child {
   padding-left: 40px;
-  border-left: 1px solid #646464;
+  padding-right: 42px;
 }
 
 .founders__name {
@@ -190,6 +191,10 @@
   letter-spacing: 0.15em;
   padding-left: 40px;
   transition: color 0.3s ease;
+}
+
+.founders__name_red {
+  color: #e7205f;
 }
 
 .founders__job {
@@ -269,5 +274,24 @@
   100% {
     bottom: 60%;
     opacity: 0;
+  }
+}
+
+@media (max-width: 1157px) {
+  .founders__container {
+    flex-wrap: wrap;
+  }
+}
+@media (max-width: 922px) {
+  .founders__name {
+    font-size: 27px;
+    line-height: 32px;
+    letter-spacing: 4.05px;
+  }
+  .founders__job {
+    font-size: 9px;
+    line-height: 17px;
+    letter-spacing: 6.3px;
+    top: 82px;
   }
 }

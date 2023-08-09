@@ -3,7 +3,9 @@ import "./Founders.css";
 
 export default function Founders() {
   const [speedOfTubesDick, setSpeedOfTubesDick] = useState(2.5);
+  const [hoverDick, setHoverDick] = useState(false);
   const [speedOfTubesDepp, setSpeedOfTubesDepp] = useState(2.5);
+  const [hoverDepp, setHoverDepp] = useState(false);
   const numTubes = 8;
   const tubes = Array.from({ length: numTubes }, () => ({
     delay: `${Math.random() * 2}s`,
@@ -11,18 +13,22 @@ export default function Founders() {
 
   const handleMouseEnterDick = () => {
     setSpeedOfTubesDick(1);
+    setHoverDick(true);
   };
 
   const handleMouseLeaveDick = () => {
     setSpeedOfTubesDick(2.5);
+    setHoverDick(false);
   };
 
   const handleMouseEnterDepp = () => {
     setSpeedOfTubesDepp(1);
+    setHoverDepp(true);
   };
 
   const handleMouseLeaveDepp = () => {
     setSpeedOfTubesDepp(2.5);
+    setHoverDepp(false);
   };
   return (
     <>
@@ -39,7 +45,14 @@ export default function Founders() {
           <div className="main__blink_vertical"></div>
           <div className="founders__dick_dark"></div>
           <div className="founders__dick_light"></div>
-          <h2 className="founders__name">Bald Dick</h2>
+          <h2
+            className={`founders__name ${
+              hoverDick ? "founders__name_red" : ""
+            }`}
+          >
+            Bald Dick
+          </h2>
+
           <p className="founders__job">
             <em className="founders__underscore">founder</em>
           </p>
@@ -54,6 +67,11 @@ export default function Founders() {
               }}
             ></div>
           ))}
+          <p className="founders__paragraph">
+            “We will see a whole new generation of artists born in the
+            metaverse. Over the next decade this technology will become part of
+            every release, ticketing, merchandise and fan club strategy.
+          </p>
         </div>
         <div
           className="founders__depp"
@@ -62,7 +80,13 @@ export default function Founders() {
         >
           <div className="founders__depp_dark"></div>
           <div className="founders__depp_light"></div>
-          <h2 className="founders__name padding">John Depp</h2>
+          <h2
+            className={`founders__name padding ${
+              hoverDepp ? "founders__name_red" : ""
+            }`}
+          >
+            John Depp
+          </h2>
           <p className="founders__job padding">
             <em className="founders__underscore">founder</em>
           </p>
@@ -76,17 +100,12 @@ export default function Founders() {
               }}
             ></div>
           ))}
+          <p className="founders__paragraph">
+            “Ignoring this new medium is like being late to e-commerce or social
+            media. The metaverse is coming; embrace it and re-imagine what it
+            means to connect with your fans.”
+          </p>
         </div>
-        <p className="founders__paragraph">
-          “We will see a whole new generation of artists born in the metaverse.
-          Over the next decade this technology will become part of every
-          release, ticketing, merchandise and fan club strategy.
-        </p>
-        <p className="founders__paragraph">
-          “Ignoring this new medium is like being late to e-commerce or social
-          media. The metaverse is coming; embrace it and re-imagine what it
-          means to connect with your fans.”
-        </p>
       </div>
     </>
   );

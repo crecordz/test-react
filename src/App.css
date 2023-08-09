@@ -11,3 +11,57 @@ body {
 .page {
   padding-top: 73.77px;
 }
+
+@media (max-width: 1900px) {
+  #root {
+    max-width: 1664px;
+  }
+  .page {
+    max-width: 1664px;
+  }
+}
+
+@media (max-width: 1740px) {
+  #root {
+    max-width: 1408px;
+  }
+  .page {
+    max-width: 1408px;
+  }
+}
+
+@media (max-width: 1475px) {
+  #root {
+    max-width: 1152px;
+  }
+  .page {
+    max-width: 1152px;
+  }
+}
+
+@media (max-width: 1157px) {
+  #root {
+    max-width: 896px;
+  }
+  .page {
+    max-width: 896px;
+  }
+}
+
+@media (max-width: 922px) {
+  #root {
+    max-width: 640px;
+  }
+  .page {
+    max-width: 640px;
+  }
+}
+
+@media (max-width: 650px) {
+  #root {
+    max-width: 384px;
+  }
+  .page {
+    max-width: 384px;
+  }
+}

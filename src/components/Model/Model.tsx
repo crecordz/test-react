@@ -10,18 +10,20 @@ export default function Model() {
 
   useEffect(() => {
     const action = animations.actions.Animation;
-    action.play();
+    if (action) {
+      action.play();
 
-    gltf.scene.traverse((child: any) => {
-      if (child.isMesh) {
-        child.material = new THREE.MeshStandardMaterial({
-          color: "#131313",
-          envMap: scene.environment,
-          metallness: 7,
-          roughness: 0.1,
-        });
-      }
-    });
+      gltf.scene.traverse((child: any) => {
+        if (child.isMesh) {
+          child.material = new THREE.MeshStandardMaterial({
+            color: "#131313",
+            envMap: scene.environment,
+            metalness: 7,
+            roughness: 0.1,
+          });
+        }
+      });
+    }
   }, [scene, animations]);
 
   return (

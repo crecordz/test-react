@@ -1,0 +1,273 @@
+.founders__block-one {
+  height: 166px;
+  max-width: 1838px;
+  border-bottom: 1px solid #646464;
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+}
+
+.founders__block-two {
+  height: 100%;
+  width: 919px;
+  border-right: 1px solid #646464;
+}
+
+.main__blink {
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  left: 3px;
+  width: 40px;
+  height: 0px;
+  box-shadow: 0 0 3px 1px rgb(230, 138, 167);
+  border: 1px solid #967de7;
+  animation: move 8s ease-in-out infinite;
+  opacity: 0;
+}
+@keyframes move {
+  0% {
+    left: 10px;
+    opacity: 0;
+  }
+  20% {
+    opacity: 1;
+  }
+  32% {
+    opacity: 0;
+  }
+  40%,
+  100% {
+    left: 50%;
+    opacity: 0;
+  }
+}
+.main__blink_vertical {
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  right: -24px;
+  width: 40px;
+  height: 0px;
+  box-shadow: 0 0 3px 1px rgb(230, 138, 167);
+  border: 1px solid #967de7;
+  opacity: 0;
+  rotate: 90deg;
+
+  animation: down 8s ease-in-out infinite;
+}
+
+@keyframes down {
+  0% {
+    top: -166px;
+    opacity: 0;
+  }
+  20% {
+    opacity: 1;
+  }
+  32% {
+    opacity: 0;
+  }
+  40%,
+  100% {
+    top: 100%;
+    opacity: 0;
+  }
+}
+
+.founders__container {
+  display: flex;
+  flex-wrap: wrap;
+  color: white;
+}
+
+.founders__dick {
+  max-width: 919px;
+  width: 100%;
+  height: auto;
+  position: relative;
+  border-right: 1px solid #646464;
+}
+
+.founders__dick_dark {
+  background-image: url("../../assets/dick_dark.png");
+  background-repeat: no-repeat;
+  background-size: center;
+  background-position: center;
+  aspect-ratio: 1.80550098;
+  opacity: 1;
+  transition: opacity 0.5s ease-in-out;
+}
+
+.founders__dick_dark:hover {
+  opacity: 0;
+}
+.founders__dick_light {
+  background-image: url("../../assets/dick.png");
+  background-repeat: no-repeat;
+  background-size: center;
+  background-position: center;
+  aspect-ratio: 1.80550098;
+  opacity: 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  transition: opacity 0.5s ease-in-out;
+}
+.founders__dick_light:hover {
+  opacity: 1;
+}
+
+.founders__depp {
+  max-width: 919px;
+  width: 100%;
+  height: auto;
+  position: relative;
+}
+
+.founders__depp_dark {
+  background-image: url("../../assets/depp_dark.png");
+  background-repeat: no-repeat;
+  background-size: center;
+  background-position: center;
+  aspect-ratio: 1.80550098;
+  opacity: 1;
+  transition: opacity 0.5s ease-in-out;
+}
+
+.founders__depp_dark:hover {
+  opacity: 0;
+}
+.founders__depp_light {
+  background-image: url("../../assets/depp.png");
+  background-repeat: no-repeat;
+  background-size: center;
+  background-position: center;
+  aspect-ratio: 1.80550098;
+  opacity: 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  transition: opacity 0.5s ease-in-out;
+}
+.founders__depp_light:hover {
+  opacity: 1;
+}
+
+.founders__paragraph {
+  margin: 0;
+  padding: 0;
+  max-width: 919px;
+  padding-top: 41px;
+  font-family: "Neue Machina";
+  font-size: 19px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 40px;
+  letter-spacing: 2.85px;
+  padding-bottom: 100px;
+}
+
+.founders__paragraph:last-child {
+  padding-left: 40px;
+  border-left: 1px solid #646464;
+}
+
+.founders__name {
+  margin: 0;
+  padding: 0;
+  position: absolute;
+  top: 40px;
+  font-family: "Druk Wide Medium";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 55px;
+  line-height: 65px;
+  letter-spacing: 0.15em;
+  padding-left: 40px;
+  transition: color 0.3s ease;
+}
+
+.founders__job {
+  margin: 0;
+  padding: 0;
+  font-family: "Druk Wide Medium";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 17px;
+  line-height: 17px;
+  letter-spacing: 0.7em;
+  text-transform: uppercase;
+  position: absolute;
+  top: 142px;
+  padding-left: 40px;
+}
+
+.founders__underscore {
+  position: relative;
+}
+
+.founders__underscore::before {
+  content: "";
+  position: absolute;
+  left: 0px;
+  bottom: -13px;
+  width: 100%;
+  height: 12px;
+  background-image: linear-gradient(
+    270deg,
+    #424242 0%,
+    rgba(50, 50, 50, 0) 100%
+  );
+}
+
+.founders__underscore::after {
+  content: "";
+  position: absolute;
+  left: 0px;
+  bottom: -13px;
+  width: 0;
+  height: 12px;
+  background-image: linear-gradient(
+    270deg,
+    #ffffff 0%,
+    rgba(50, 50, 50, 0) 100%
+  );
+}
+
+.founders__underscore:hover::after {
+  width: 100%;
+  transition: width 0.3s;
+}
+
+.padding {
+  padding-left: 40px;
+}
+
+.founders__flying-tube {
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  height: 60px;
+  width: 12px;
+  background: linear-gradient(180deg, #424242 0%, rgba(50, 50, 50, 0) 100%);
+  animation: move3 2.5s linear infinite;
+}
+
+@keyframes move3 {
+  0% {
+    bottom: 0;
+    opacity: 0;
+  }
+  20% {
+    opacity: 1;
+  }
+  100% {
+    bottom: 60%;
+    opacity: 0;
+  }
+}

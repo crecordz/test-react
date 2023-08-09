@@ -5,6 +5,7 @@ import { useState } from "react";
 export default function Menu() {
   const [hoverAbout, setHoverAbout] = useState(false);
   const [hoverProducts, setHoverProducts] = useState(false);
+  const [hoverContacts, setHoverContacts] = useState(false);
 
   const handleMouseEnterForAbout = () => {
     setHoverAbout(true);
@@ -22,8 +23,16 @@ export default function Menu() {
     setHoverProducts(false);
   };
 
+  const handleMouseEnterForContacts = () => {
+    setHoverContacts(true);
+  };
+
+  const handleMouseLeaveForContacts = () => {
+    setHoverContacts(false);
+  };
+
   return (
-    <>
+    <div className="menu__container">
       <MenuItem
         handleMouseEnter={handleMouseEnterForAbout}
         handleMouseLeave={handleMouseLeaveForAbout}
@@ -38,6 +47,13 @@ export default function Menu() {
         name="products"
         arrayOfLines={menuLinesProducts}
       />
-    </>
+      <button
+        className={`menu__button ${hoverContacts ? "menu__button_border" : ""}`}
+        onMouseEnter={handleMouseEnterForContacts}
+        onMouseLeave={handleMouseLeaveForContacts}
+      >
+        contacts
+      </button>
+    </div>
   );
 }

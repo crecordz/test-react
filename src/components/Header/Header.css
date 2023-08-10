@@ -3,8 +3,8 @@
   width: 100%;
   height: 73.77px;
   border-bottom: 1px grey solid;
-  display: flex;
-  justify-content: space-between;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
   align-items: center;
   color: white;
   letter-spacing: 2.1px;
@@ -15,6 +15,7 @@
   bottom: 0;
   background-image: url("../../assets/noise_bg.png");
   z-index: 1;
+  margin: 0 auto;
 }
 
 .header__rectangle {
@@ -34,10 +35,47 @@
   font-weight: 500;
   line-height: 23px;
   letter-spacing: 2.1px;
+  margin: 0 auto;
 }
 
 .header__dot {
   width: 3px;
   height: 3px;
   background-color: #e7205f;
+}
+
+@media (max-width: 1900px) {
+  .header {
+    max-width: 1664px;
+  }
+}
+
+@media (max-width: 1740px) {
+  .header {
+    max-width: 1408px;
+  }
+}
+
+@media (max-width: 1475px) {
+  .header {
+    max-width: 1152px;
+  }
+}
+
+@media (max-width: 1157px) {
+  .header {
+    max-width: 896px;
+  }
+}
+
+@media (max-width: 922px) {
+  .header {
+    max-width: 640px;
+  }
+}
+
+@media (max-width: 650px) {
+  .header {
+    max-width: 384px;
+  }
 }

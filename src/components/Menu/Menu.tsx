@@ -2,6 +2,8 @@ import { menuLinesAbout, menuLinesProducts } from "../../utils/arrays";
 import MenuItem from "../MenuItem/MenuItem";
 import "./Menu.css";
 import { useState } from "react";
+import { Link } from "react-router-dom";
+
 export default function Menu() {
   const [hoverAbout, setHoverAbout] = useState(false);
   const [hoverProducts, setHoverProducts] = useState(false);
@@ -54,6 +56,9 @@ export default function Menu() {
       >
         contacts
       </button>
+      <Link to="/mobilemenu">
+        <div className="menu__mobile-button"></div>
+      </Link>
     </div>
   );
 }

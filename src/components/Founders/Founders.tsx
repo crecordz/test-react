@@ -43,8 +43,21 @@ export default function Founders() {
           onMouseLeave={handleMouseLeaveDick}
         >
           <div className="main__blink_vertical"></div>
-          <div className="founders__dick_dark"></div>
-          <div className="founders__dick_light"></div>
+          <div className="founders__photo-container">
+            <div className="founders__dick_dark"></div>
+            <div className="founders__dick_light"></div>
+            {tubes.map((tube, index) => (
+              <div
+                key={index}
+                className="founders__flying-tube"
+                style={{
+                  left: `${Math.random() * 90}%`,
+                  animation: `move3 ${speedOfTubesDick}s linear ${tube.delay} infinite`,
+                }}
+              ></div>
+            ))}
+          </div>
+
           <h2
             className={`founders__name ${
               hoverDick ? "founders__name_red" : ""
@@ -57,16 +70,6 @@ export default function Founders() {
             <em className="founders__underscore">founder</em>
           </p>
 
-          {tubes.map((tube, index) => (
-            <div
-              key={index}
-              className="founders__flying-tube"
-              style={{
-                left: `${Math.random() * 90}%`, // Random left offset between 0% and 80%
-                animation: `move3 ${speedOfTubesDick}s linear ${tube.delay} infinite`,
-              }}
-            ></div>
-          ))}
           <p className="founders__paragraph">
             “We will see a whole new generation of artists born in the
             metaverse. Over the next decade this technology will become part of
@@ -78,8 +81,21 @@ export default function Founders() {
           onMouseEnter={handleMouseEnterDepp}
           onMouseLeave={handleMouseLeaveDepp}
         >
-          <div className="founders__depp_dark"></div>
-          <div className="founders__depp_light"></div>
+          <div className="founders__photo-container">
+            <div className="founders__depp_dark"></div>
+            <div className="founders__depp_light"></div>
+            {tubes.map((tube, index) => (
+              <div
+                key={index}
+                className="founders__flying-tube"
+                style={{
+                  left: `${Math.random() * 90}%`,
+                  animation: `move3 ${speedOfTubesDepp}s linear ${tube.delay} infinite`,
+                }}
+              ></div>
+            ))}
+          </div>
+
           <h2
             className={`founders__name padding ${
               hoverDepp ? "founders__name_red" : ""
@@ -90,16 +106,7 @@ export default function Founders() {
           <p className="founders__job padding">
             <em className="founders__underscore">founder</em>
           </p>
-          {tubes.map((tube, index) => (
-            <div
-              key={index}
-              className="founders__flying-tube"
-              style={{
-                left: `${Math.random() * 90}%`, // Random left offset between 0% and 80%
-                animation: `move3 ${speedOfTubesDepp}s linear ${tube.delay} infinite`,
-              }}
-            ></div>
-          ))}
+
           <p className="founders__paragraph">
             “Ignoring this new medium is like being late to e-commerce or social
             media. The metaverse is coming; embrace it and re-imagine what it

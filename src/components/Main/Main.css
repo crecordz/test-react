@@ -151,10 +151,6 @@
   .main__subtitle {
     max-width: 848px;
   }
-  .canvas-element {
-    max-width: 100%;
-    width: auto;
-  }
 }
 
 @media (max-width: 1735px) {
@@ -199,5 +195,38 @@
   }
   .main__block-three {
     max-width: 250px;
+  }
+}
+
+@media (max-width: 922px) {
+  .main__info {
+    min-height: 390px;
+  }
+  .main__subtitle {
+    padding-bottom: 30px;
+  }
+  .main__title {
+    font-size: 27px;
+    line-height: 32px;
+    letter-spacing: 4.05px;
+    padding-right: 30px;
+  }
+  .main__subtitle {
+    font-size: 12px;
+    line-height: 23px;
+    letter-spacing: 1.8px;
+    padding-top: 24px;
+  }
+}
+
+@media (max-width: 650px) {
+  .main__block-one {
+    display: none;
+  }
+  .main__info_add {
+    display: none;
+  }
+  .main__subtitle {
+    padding-right: 30px;
   }
 }

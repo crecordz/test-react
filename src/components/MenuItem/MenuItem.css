@@ -9,7 +9,6 @@
 
 .menu__button-container {
   display: flex;
-  gap: 17px;
   align-items: center;
   justify-content: center;
 }
@@ -35,4 +34,11 @@
 
 .menu__button_red {
   color: #e7205f;
+}
+
+@media (max-width: 922px) {
+  .menu__button {
+    padding-left: 0;
+    padding-right: 0;
+  }
 }

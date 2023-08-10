@@ -103,6 +103,9 @@
 .founders__dick_dark:hover {
   opacity: 0;
 }
+.founders__photo-container {
+  position: relative;
+}
 .founders__dick_light {
   background-image: url("../../assets/dick.png");
   background-repeat: no-repeat;
@@ -293,5 +296,15 @@
     line-height: 17px;
     letter-spacing: 6.3px;
     top: 82px;
+  }
+}
+
+@media (max-width: 650px) {
+  .founders__block-one {
+    height: 30px;
+  }
+  .founders__paragraph {
+    padding-left: 0;
+    padding-bottom: 42px;
   }
 }

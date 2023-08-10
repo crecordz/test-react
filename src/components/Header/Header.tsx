@@ -4,6 +4,7 @@ import "./Header.css";
 export default function Header() {
   return (
     <div className="header">
+      <div></div>
       <div className="header__rectangle">
         <div className="header__dot"></div>
         evr

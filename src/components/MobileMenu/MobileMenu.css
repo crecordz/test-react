@@ -1,0 +1,116 @@
+.mobile__button-close {
+  display: block;
+  width: 49px;
+  height: 10px;
+  background-image: url("../../assets/menu_button-mobile.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+  cursor: pointer;
+  position: absolute;
+  top: 40px;
+  right: 30px;
+  color: white;
+  z-index: 2;
+}
+
+.mobile__container {
+  margin: 204 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  position: relative;
+  z-index: 1;
+  width: 100vw;
+  height: 100vh;
+}
+.mobile__border {
+  border-left: 1px solid #646464;
+  position: absolute;
+  left: 10px;
+  top: 100px;
+  width: 1px;
+  height: 100%;
+}
+
+.mobile__button {
+  border: none;
+  border-radius: 20px;
+  background-color: inherit;
+  color: #fff;
+  font-family: "Neue Machina";
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 23px;
+  letter-spacing: 2.1px;
+  text-transform: uppercase;
+  transition: all 0.4s linear;
+}
+.mobile__button:hover {
+  background-color: #212124;
+}
+
+.mobile__button_title {
+  color: #e7205f;
+  text-align: center;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 23px;
+  letter-spacing: 12px;
+}
+
+.mobile__button_white {
+  color: white;
+}
+
+.mobile__line {
+  width: 70px;
+  border: 1px #646464 solid;
+}
+
+.main__blink_vertical {
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  left: -10px;
+  width: 40px;
+  height: 0px;
+  box-shadow: 0 0 3px 1px rgb(230, 138, 167);
+  border: 1px solid #967de7;
+  opacity: 0;
+  rotate: 90deg;
+
+  animation: down 8s ease-in-out infinite;
+}
+.canvas-element {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: auto;
+  right: auto;
+  z-index: -1;
+  width: 100vw;
+  height: 100vh;
+  filter: blur(5px);
+}
+
+@keyframes down {
+  0% {
+    top: 0;
+    opacity: 0;
+  }
+  20% {
+    opacity: 1;
+  }
+  32% {
+    opacity: 0;
+  }
+  40%,
+  100% {
+    top: 100%;
+    opacity: 0;
+  }
+}

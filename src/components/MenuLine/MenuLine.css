@@ -20,3 +20,11 @@
 .menu__button-item:hover {
   background-color: #212124;
 }
+
+@media (max-width: 922px) {
+  .menu__button-item {
+    width: 150px;
+    padding: 0;
+    margin: 0;
+  }
+}

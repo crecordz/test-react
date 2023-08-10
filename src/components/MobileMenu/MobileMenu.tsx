@@ -26,7 +26,7 @@ export default function MobileMenu() {
         </button>
         <div className="main__blink_vertical"></div>
         <div className="mobile__border"></div>
-        <div className="canvas-element">
+        <div className="canvas-element-mobile">
           <Canvas camera={{ position: [3, 0, 0] }}>
             <Model />
           </Canvas>

@@ -85,7 +85,7 @@
 
   animation: down 8s ease-in-out infinite;
 }
-.canvas-element {
+.canvas-element-mobile {
   position: absolute;
   top: 0;
   bottom: 0;
